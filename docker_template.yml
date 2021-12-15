@@ -3,7 +3,7 @@ variables:
   DOCKER_TAG: REPOSITORY_TAG
   DOCKER_IMAGE_NAME: NAME_OF_IMAGE
 
-.docker_template:
+.docker_template: &docker_template
   image: 
     name: docker:latest
   services: docker:dind
