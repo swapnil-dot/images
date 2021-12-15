@@ -11,6 +11,3 @@ variables:
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD"
     - docker build -t "$DOCKER_TAG"/"$DOCKER_IMAGE_NAME" .
     - docker push "$DOCKER_TAG"/"DOCKER_IMAGE_NAME"
-
-
-    before_script:
